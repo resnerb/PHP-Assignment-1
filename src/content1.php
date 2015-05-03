@@ -6,17 +6,27 @@
 </head>
 <body>
 <?php
-    
-    $username = $_POST["username"];
-    echo $username;
-    if ($username === '' || !isset($username))
+    if (isset($_SESSION['user']))
     {
-        echo 'A username must be entered. Click <a href="login.php">here</a> to return to the login screen.';
+        $_SESSION['numVisits']++;
+        echo 'Hello ' . $_SESSION['user'] . ' you have visited this site ' . $_SESSION['numVisits'] . ' times before. Click <a href="logout.php">here</a> to logout.';
     }
     else
     {
-        echo 'Hello ' . $username . ' you have visited this site ' . $numVisits . ' times before. Click here to logout.';
+        $username = $_POST["username"];
+        
+        if ($username === '' || !isset($username))
+        {
+            echo 'A username must be entered. Click <a href="login.php">here</a> to return to the login screen.';
+        }
+        else
+        {
+            $_SESSION['user'] = $username;
+            $_SESSION['numVisits'] = 0;
+            echo 'Hello ' . $_SESSION['user'] . ' you have visited this site ' . $_SESSION['numVisits'] . ' times before. Click <a href="logout.php">here</a> to logout.';
+        }
     }
+    
     
 ?>
 </body>
