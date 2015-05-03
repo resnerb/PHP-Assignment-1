@@ -85,6 +85,6 @@
     echo "<p> Min Multiplier = " . $minMultiplier . "</p>";
     echo "<p> Max Multiplier = " . $maxMultiplier . "</p>";
 ?>
-<body>
+</body>
 </html>
 
