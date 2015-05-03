@@ -26,10 +26,7 @@
         echo 'Minimum multiplier larger than maximum.';
         $showTable = false;
     }
-    var_dump($minMultiplicand);
-    var_dump(is_int($maxMultiplicand));
-    var_dump(is_int($minMultiplier));
-    var_dump(is_int($maxMultiplier));
+    
     if (is_int($minMultiplicand) == false)
     {
         echo 'Minimum multiplcand is not an integer.' . '<br>';
@@ -53,6 +50,8 @@
     
     if ($showTable)
     {
+        //Found code for table implementation at the following site
+        //http://stackoverflow.com/questions/22745645/how-to-make-a-multiplication-table-in-php-and-html
         $table='<table border="1">';
         for($r = 0; $r < 2; $r++)
         {
