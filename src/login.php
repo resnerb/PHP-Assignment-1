@@ -1,3 +1,15 @@
+<?php
+    // Start the session - this must be the first thing in the file
+    session_start();
+    //echo "Session paramgeters: " . json_encode($_SESSION) . "<br>";
+    if(isset($_SESSION['user']))
+    {
+        // If the user is logged in, then redirect to the content1 page
+        header("location: content1.php");
+        exit();
+    }
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +22,6 @@
 Username: <input type="text" name="username"><br>
 <input type="submit" value="Login">
 </form>
-
-<?php
-    session_start();
-    
-    if (isset($_SESSION['user']))
-    {
-        header("location:content1.php");
-    }
-?>
 
 </body>
 </html>
