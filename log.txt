@@ -1,1 +1,15 @@
+Start: Fri, 1 May 2015 21:00:00 -0800
+End: Fri, 1 May 2015 23:59:00 -0800
+Task: Began working on multtable.php and loopback.php. Tried running *.php files and realized needed to install web server.
 
+Start: Sat, 2 May 2015 08:00:00 -0800
+End: Sat, 2 May 2015 11:30:00 -0800
+Task: Installed web server in order to test and run *.php files. Tested and finished work on multtable.php and loopback.php.
+
+Start: Sat, 2 May 2015 12:30:00 -0800
+End: Sun, 3 May 2015 01:30:00 -0800
+Task: Began working on login.php and content1.php
+
+Start: Sun, 3 May 2015 14:00:00 -0800
+End: Sun, 3 May 2015 19:30:00 -0800
+Task: Tested and finished work on login.php, content1.php, content2.php, and logout.php.
